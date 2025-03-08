@@ -12,17 +12,18 @@ body {
 }
 
 .terminal {
-    width: 80%;
-    max-width: 600px;
+    width: 100%;
+    max-width: 1000px;
     background-color: 
 #000000;
     padding: 20px;
+    box-sizing: border-box;
     box-shadow: 0 0 10px 
 rgba(0, 0, 0, 0.5);
 }
 
 .output {
-    min-height: 200px;
+    min-height: 300px;
     overflow-y: auto;
     margin-bottom: 10px;
 }
@@ -34,6 +35,8 @@ rgba(0, 0, 0, 0.5);
 
 .prompt {
     margin-right: 10px;
+    color: 
+#1de9b6;
 }
 
 input[type="text"] {
