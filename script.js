@@ -19,24 +19,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
         switch(cmd) {
             case 'help':
-                newLine.textContent = 'Available commands: help, date, clear, echo, ls, pwd';
+                newLine.textContent = 'Available commands: help, whoami, blog, contact, projects, clear';
                 break;
-            case 'date':
-                newLine.textContent = new Date().toString();
+            case 'whoami':
+                newLine.textContent = 'I am Keshab Nepali, a Cyber Security Enthusiast.';
+                break;
+            case 'blog':
+                newLine.textContent = 'Navigating to blog...';
+                // Add logic to show the blog section
+                break;
+            case 'contact':
+                newLine.textContent = 'You can contact me at [Your Email].';
+                break;
+            case 'projects':
+                newLine.textContent = 'Listing projects...';
+                // Add logic to show projects section
                 break;
             case 'clear':
                 output.innerHTML = '';
                 return;
-            case 'echo':
-                const echoText = args.slice(1).join(' ');
-                newLine.textContent = echoText;
-                break;
-            case 'ls':
-                newLine.textContent = 'file1.txt  file2.jpg  documents/  music/';
-                break;
-            case 'pwd':
-                newLine.textContent = '/home/user';
-                break;
             default:
                 newLine.textContent = `Command not found: ${command}`;
         }
