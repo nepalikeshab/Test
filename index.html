@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-<!--     <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <title>Keshab Nepali</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <main class="terminal">
-            <div class="output"></div>
-            <div class="input-line">
-                <span class="prompt">$</span>
-                <input id="cli-input" type="text" autofocus placeholder="Type commands here...">
-            </div>
-        </main>
+    <div class="terminal">
+        <div class="output" id="output"></div>
+        <div class="input-line">
+            <span class="prompt">$</span>
+            <input type="text" id="cli-input" placeholder="Type a command..." autofocus>
+        </div>
     </div>
     <script src="script.js"></script>
+</body>
+</html>
