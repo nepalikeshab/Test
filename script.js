@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const input = document.getElementById('cli-input');
-    const output = document.querySelector('.output');
+    const output = document.getElementById('output');
 
     input.addEventListener('keydown', function(event) {
         if (event.key === 'Enter') {
@@ -26,14 +26,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 break;
             case 'blog':
                 newLine.textContent = 'Navigating to blog...';
-                // Add logic to show the blog section
                 break;
             case 'contact':
-                newLine.textContent = 'You can contact me at [Your Email].';
+                newLine.textContent = 'You can contact me at nepalikeshav67@gmail.com.';
                 break;
             case 'projects':
                 newLine.textContent = 'Listing projects...';
-                // Add logic to show projects section
                 break;
             case 'clear':
                 output.innerHTML = '';
