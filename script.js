@@ -26,14 +26,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 break;
             case 'blog':
                 newLine.textContent = 'Navigating to blog...';
-                // Add logic to show the blog section
                 break;
             case 'contact':
                 newLine.textContent = 'You can contact me at [Your Email].';
                 break;
             case 'projects':
                 newLine.textContent = 'Listing projects...';
-                // Add logic to show projects section
                 break;
             case 'clear':
                 output.innerHTML = '';
@@ -51,6 +49,5 @@ document.addEventListener('DOMContentLoaded', function () {
         newLine.textContent = `Navigating to ${page}...`;
         output.appendChild(newLine);
         output.scrollTop = output.scrollHeight;
-        // Add logic to show the respective section content
     }
 });
