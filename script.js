@@ -22,16 +22,18 @@ document.addEventListener('DOMContentLoaded', function () {
                 newLine.textContent = 'Available commands: help, whoami, blog, contact, projects, clear';
                 break;
             case 'whoami':
-                newLine.textContent = 'I am [Your Name], a [Your Profession]. [Short Description]';
+                newLine.textContent = 'I am Keshab Nepali, a cybersecurity enthusiast.';
                 break;
             case 'blog':
                 newLine.textContent = 'Navigating to blog...';
+                // Add logic to show the blog section
                 break;
             case 'contact':
                 newLine.textContent = 'You can contact me at [Your Email].';
                 break;
             case 'projects':
                 newLine.textContent = 'Listing projects...';
+                // Add logic to show projects section
                 break;
             case 'clear':
                 output.innerHTML = '';
@@ -40,13 +42,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 newLine.textContent = `Command not found: ${command}`;
         }
 
-        output.appendChild(newLine);
-        output.scrollTop = output.scrollHeight;
-    }
-
-    window.navigateTo = function(page) {
-        const newLine = document.createElement('div');
-        newLine.textContent = `Navigating to ${page}...`;
         output.appendChild(newLine);
         output.scrollTop = output.scrollHeight;
     }
