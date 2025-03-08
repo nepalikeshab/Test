@@ -9,12 +9,12 @@ body, html {
 .container {
     display: flex;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 
 .sidebar {
     background-color: 
-#b2b2b2; /* Ash gray */
+#b2b2b2;
     color: 
 #111;
     width: 250px;
@@ -22,6 +22,7 @@ body, html {
     box-sizing: border-box;
     box-shadow: 2px 0 5px 
 rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
 }
 
 .sidebar img.profile-pic {
@@ -65,20 +66,17 @@ rgba(0, 0, 0, 0.1);
 #2e3436;
     color: 
 #ffffff;
-    padding: 40px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    overflow: hidden;
     box-sizing: border-box;
-    box-shadow: -2px 0 5px 
-rgba(0, 0, 0, 0.1);
 }
 
 .output {
     flex-grow: 1;
     overflow-y: auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .input-line {
@@ -96,7 +94,7 @@ input[type="text"] {
     outline: none;
     color: 
 #ffffff;
-    width: 100%;
+    flex-grow: 1;
     font-family: inherit;
     font-size: 18px;
 }
@@ -108,6 +106,6 @@ input[type="text"] {
         box-shadow: none;
     }
     .container {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 }
