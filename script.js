@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 newLine.textContent = 'Navigating to blog...';
                 break;
             case 'contact':
-                newLine.textContent = 'You can contact me at `nepalikeshav67@gmail.com` or you can just leave me your message at this site.';
+                newLine.textContent = 'You can contact me at `nepalikeshav67@gmail.com`.';
                 break;
             case 'projects':
                 newLine.textContent = 'Listing projects...';
