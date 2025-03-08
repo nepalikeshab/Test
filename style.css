@@ -50,9 +50,8 @@ input[type="text"] {
     font-size: 16px;
 }
 
- #clock {
-    position: fixed;
-    top: 20px;
+ .clock {
+    top: 80px;
     right: 20px;
     width: 150px;
     height: 150px;
@@ -60,10 +59,9 @@ input[type="text"] {
     border-radius: 50%;
     background-color: #f8f9fa;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 0px 15px 
-rgba(0, 0, 0, 0.2);
+    justify-content: top;
+    align-items: top;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
     font-family: 'Arial', sans-serif;
     font-size: 24px;
     color: #333;
