@@ -44,22 +44,15 @@ document.addEventListener('DOMContentLoaded', function () {
         output.scrollTop = output.scrollHeight;
     }
 
-    function updateClock() {
-        const clockElement = document.getElementById('clock');
-        const now = new Date();
-        let hours = now.getHours();
-        let minutes = now.getMinutes();
-        let seconds = now.getSeconds();
+        function updateTime() {
+            const date = new Date();
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            const time = date.toLocaleTimeString();
+            const day = date.toLocaleDateString(undefined, options);
+            document.getElementById('clock').innerHTML =
+                `Today is: ${day}, Current Time: ${time}`;
+        }
 
-        // Format the time to be two digits
-        hours = hours < 10 ? '0' + hours : hours;
-        minutes = minutes < 10 ? '0' + minutes : minutes;
-        seconds = seconds < 10 ? '0' + seconds : seconds;
-
-        clockElement.innerText = `${hours}:${minutes}:${seconds}`;
-    }
-    
-    // Update the clock every second
-    setInterval(updateClock, 1000);
-    updateClock(); // Initial call to display time immediately
+        setInterval(updateTime, 1000);
+        updateTime();
 });
