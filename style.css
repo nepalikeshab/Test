@@ -9,20 +9,19 @@ body, html {
 .container {
     display: flex;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
 }
 
 .sidebar {
     background-color: 
-#b2b2b2;
+#b2b2b2; /* Ash gray */
     color: 
 #111;
     width: 250px;
     padding: 20px;
+    box-shadow: 4px 0 10px 
+rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
-    box-shadow: 2px 0 5px 
-rgba(0, 0, 0, 0.1);
-    overflow-y: auto;
 }
 
 .sidebar img.profile-pic {
@@ -36,7 +35,7 @@ rgba(0, 0, 0, 0.1);
 .sidebar h2, .sidebar ul {
     text-align: center;
 }
-
+    
 .sidebar ul {
     list-style-type: none;
     padding: 0;
@@ -44,20 +43,7 @@ rgba(0, 0, 0, 0.1);
 
 .sidebar li {
     margin: 10px 0;
-}
-
-.sidebar button {
-    width: 100%;
-    padding: 10px;
-    background-color: 
-#eaeaea;
-    border: none;
     cursor: pointer;
-}
-
-.sidebar button:hover {
-    background-color: 
-#d4d4d4;
 }
 
 .terminal {
@@ -66,17 +52,18 @@ rgba(0, 0, 0, 0.1);
 #2e3436;
     color: 
 #ffffff;
-    padding: 20px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    overflow: hidden;
     box-sizing: border-box;
 }
 
 .output {
     flex-grow: 1;
     overflow-y: auto;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .input-line {
@@ -94,7 +81,7 @@ input[type="text"] {
     outline: none;
     color: 
 #ffffff;
-    flex-grow: 1;
+    width: 100%;
     font-family: inherit;
     font-size: 18px;
 }
@@ -102,10 +89,10 @@ input[type="text"] {
 @media (max-width: 768px) {
     .sidebar {
         width: 100%;
-        height: auto;
+        height: 150px;
         box-shadow: none;
     }
     .container {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 }
