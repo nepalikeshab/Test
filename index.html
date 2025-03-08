@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-<!--     <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terminal Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -10,20 +10,13 @@
     <div class="container">
         <aside class="sidebar">
             <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
-            <h2>Navigation</h2>
-            <ul>
-                <li><button onclick="navigateTo('home')">Home</button></li>
-                <li><button onclick="navigateTo('about')">About</button></li>
-                <li><button onclick="navigateTo('blog')">Blog</button></li>
-                <li><button onclick="navigateTo('projects')">Projects</button></li>
-                <li><button onclick="navigateTo('contact')">Contact</button></li>
-            </ul>
+            <h2>Commands</h2>
         </aside>
         <main class="terminal">
             <div class="output"></div>
             <div class="input-line">
                 <span class="prompt">$</span>
-                <input id="cli-input" type="text" autofocus placeholder="Type commands here...">
+                <input id="cli-input" type="text" autofocus placeholder="Type 'help' command to navigate.......... ">
             </div>
         </main>
     </div>
