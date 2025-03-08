@@ -1,10 +1,8 @@
 body {
     margin: 0;
     height: 100vh;
-    background-color: 
-#2e3436; /* Dark background */
-    color: 
-#ffffff; /* White text */
+    background-color: #2e3436; /* Dark background */
+    color: #ffffff; /* White text */
     font-family: 'Courier New', Courier, monospace; /* Monospace font */
     display: flex;
     justify-content: center;
@@ -15,12 +13,29 @@ body {
 .terminal {
     width: 100%;
     max-width: 1000px;
-    background-color: 
-#000000;
+    background-color: #000000;
     padding: 20px;
     box-sizing: border-box;
-    box-shadow: 0 0 10px 
-rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.clock {
+    position: fixed; /* This anchors the element relative to the viewport */
+    top: 80px;
+    right: 20px;
+    width: 150px;
+    height: 150px;
+    border: 5px solid #333;
+    border-radius: 50%;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    color: #333;
+    z-index: 1000; /* Ensure it stays on top if needed */
 }
 
 .output {
@@ -50,20 +65,4 @@ input[type="text"] {
     font-size: 16px;
 }
 
- .clock {
-    top: 80px;
-    right: 20px;
-    width: 150px;
-    height: 150px;
-    border: 5px solid #333;
-    border-radius: 50%;
-    background-color: #f8f9fa;
-    display: flex;
-    justify-content: top;
-    align-items: top;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-    font-family: 'Arial', sans-serif;
-    font-size: 24px;
-    color: #333;
-    z-index: 1000; /* Ensure it stays on top if needed */
 }
