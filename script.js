@@ -43,22 +43,23 @@ document.addEventListener('DOMContentLoaded', function () {
         output.appendChild(newLine);
         output.scrollTop = output.scrollHeight;
     }
-           function updateClock() {
-            const clockElement = document.getElementById('clock-time');
-            const now = new Date();
-            let hours = now.getHours();
-            let minutes = now.getMinutes();
-            let seconds = now.getSeconds();
 
-            // Format the time to be two digits
-            hours = hours < 10 ? '0' + hours : hours;
-            minutes = minutes < 10 ? '0' + minutes : minutes;
-            seconds = seconds < 10 ? '0' + seconds : seconds;
+    function updateClock() {
+        const clockElement = document.getElementById('clock');
+        const now = new Date();
+        let hours = now.getHours();
+        let minutes = now.getMinutes();
+        let seconds = now.getSeconds();
 
-            clockElement.innerText = `${hours}:${minutes}:${seconds}`;
-        }
-        
-        // Update the clock every second
-        setInterval(updateClock, 1000);
-        updateClock(); // Initial call to display time immediately
+        // Format the time to be two digits
+        hours = hours < 10 ? '0' + hours : hours;
+        minutes = minutes < 10 ? '0' + minutes : minutes;
+        seconds = seconds < 10 ? '0' + seconds : seconds;
+
+        clockElement.innerText = `${hours}:${minutes}:${seconds}`;
+    }
+    
+    // Update the clock every second
+    setInterval(updateClock, 1000);
+    updateClock(); // Initial call to display time immediately
 });
