@@ -8,27 +8,34 @@ body, html {
 
 .container {
     display: flex;
-    flex-direction: column;
     height: 100vh;
     width: 100vw;
 }
 
 .sidebar {
     background-color: 
-#111;
+#b2b2b2; /* Ash gray */
     color: 
-#fff;
-    width: 200px;
-    padding: 10px;
+#111;
+    width: 250px;
+    padding: 20px;
     box-shadow: 4px 0 10px 
-rgba(0, 0, 0, 0.5);
-    height: 100vh;
+rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+
+.sidebar img.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
 }
 
 .sidebar h2, .sidebar ul {
     text-align: center;
 }
-
+    
 .sidebar ul {
     list-style-type: none;
     padding: 0;
@@ -45,18 +52,18 @@ rgba(0, 0, 0, 0.5);
 #2e3436;
     color: 
 #ffffff;
-    padding: 20px;
-    box-sizing: border-box;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 .output {
     flex-grow: 1;
     overflow-y: auto;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .input-line {
@@ -76,7 +83,7 @@ input[type="text"] {
 #ffffff;
     width: 100%;
     font-family: inherit;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 @media (max-width: 768px) {
