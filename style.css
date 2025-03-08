@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: 
+#2e3436; /* Dark background */
+    color: 
+#ffffff;  /* White text */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.terminal {
+    width: 80%;
+    max-width: 600px;
+    background-color: 
+#000000;
+    padding: 20px;
+    box-shadow: 0 0 10px 
+rgba(0, 0, 0, 0.5);
+}
+
+.output {
+    min-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.input-line {
+    display: flex;
+    align-items: center;
+}
+
+.prompt {
+    margin-right: 10px;
+}
+
+input[type="text"] {
+    background: none;
+    border: none;
+    outline: none;
+    color: 
+#ffffff;
+    width: 100%;
+    font-family: inherit;
+    font-size: 16px;
+}
