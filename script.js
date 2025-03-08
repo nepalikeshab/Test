@@ -45,4 +45,12 @@ document.addEventListener('DOMContentLoaded', function () {
         output.appendChild(newLine);
         output.scrollTop = output.scrollHeight;
     }
+
+    window.navigateTo = function(page) {
+        const newLine = document.createElement('div');
+        newLine.textContent = `Navigating to ${page}...`;
+        output.appendChild(newLine);
+        output.scrollTop = output.scrollHeight;
+        // Add logic to show the respective section content
+    }
 });
