@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 newLine.textContent = 'Available commands: help, whoami, blog, contact, projects, clear';
                 break;
             case 'whoami':
-                newLine.textContent = 'I am Keshab Nepali, a Cyber Security Enthusiast.';
+                newLine.textContent = 'I am [Your Name], a [Your Profession]. [Short Description]';
                 break;
             case 'blog':
                 newLine.textContent = 'Navigating to blog...';
