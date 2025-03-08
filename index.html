@@ -3,16 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <title>CLI Interface Webpage</title>
 </head>
 <body>
-    <div class="terminal">
-        <div class="output"></div>
-        <div class="input-line">
-            <span class="prompt">$</span>
-            <input type="text" id="cli-input" autofocus>
-        </div>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Commands</h2>
+            <ul>
+                <li>help</li>
+                <li>whoami</li>
+                <li>blog</li>
+                <li>contact</li>
+                <li>projects</li>
+            </ul>
+        </aside>
+        <main class="terminal">
+            <div class="output"></div>
+            <div class="input-line">
+                <span class="prompt">$</span>
+                <input id="cli-input" type="text" autofocus placeholder="Type commands here...">
+            </div>
+        </main>
     </div>
     <script src="script.js"></script>
 </body>
