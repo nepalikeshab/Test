@@ -1,38 +1,35 @@
-body, html {
+body {
     margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
     background-color: 
-#2e3436;
+#2e3436; /* Dark background */
     color: 
-#ffffff;
+#ffffff; /* White text */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100%;
-    box-sizing: border-box;
+.terminal {
+    width: 80%;
+    max-width: 600px;
+    background-color: 
+#000000;
     padding: 20px;
-    justify-content: flex-end;
+    box-shadow: 0 0 10px 
+rgba(0, 0, 0, 0.5);
 }
 
 .output {
-    flex-grow: 1;
+    min-height: 200px;
     overflow-y: auto;
-    width: 100%;
     margin-bottom: 10px;
 }
 
 .input-line {
     display: flex;
     align-items: center;
-    width: 100%;
 }
 
 .prompt {
@@ -47,11 +44,5 @@ input[type="text"] {
 #ffffff;
     width: 100%;
     font-family: inherit;
-    font-size: 18px;
-}
-
-@media (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
+    font-size: 16px;
 }
