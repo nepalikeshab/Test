@@ -3,86 +3,36 @@ body, html {
     padding: 0;
     height: 100%;
     font-family: 'Courier New', Courier, monospace;
-    display: flex;
-}
-
-.container {
-    display: flex;
-    height: 100vh;
-    width: 100%;
-}
-
-.sidebar {
-    background-color: 
-#b2b2b2;
-    color: 
-#111;
-    width: 250px; /* Sidebar width */
-    padding: 20px;
-    box-sizing: border-box;
-    box-shadow: 2px 0 5px 
-rgba(0, 0, 0, 0.1);
-    overflow-y: auto;
-}
-
-.sidebar img.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto 20px;
-}
-
-.sidebar h2, .sidebar ul {
-    text-align: center;
-}
-
-.sidebar ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.sidebar li {
-    margin: 10px 0;
-}
-
-.sidebar button {
-    width: 100%;
-    padding: 10px;
-    background-color: 
-#eaeaea;
-    border: none;
-    cursor: pointer;
-}
-
-.sidebar button:hover {
-    background-color: 
-#d4d4d4;
-}
-
-.terminal {
-    flex-grow: 1; /* Make the terminal take up all available space */
     background-color: 
 #2e3436;
     color: 
 #ffffff;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    height: 100vh;
+    width: 100%;
     box-sizing: border-box;
-    overflow-y: auto; /* Allow scrolling if content is too large */
+    padding: 20px;
+    justify-content: flex-end;
 }
 
 .output {
     flex-grow: 1;
     overflow-y: auto;
+    width: 100%;
     margin-bottom: 10px;
 }
 
 .input-line {
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .prompt {
@@ -95,18 +45,13 @@ input[type="text"] {
     outline: none;
     color: 
 #ffffff;
-    flex-grow: 1;
+    width: 100%;
     font-family: inherit;
     font-size: 18px;
 }
 
 @media (max-width: 768px) {
-    .sidebar {
-        width: 100%;
-        height: auto;
-        box-shadow: none;
-    }
     .container {
-        flex-direction: column;
+        padding: 10px;
     }
 }
